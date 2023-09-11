@@ -1,0 +1,19 @@
+/* Custom CSS */
+.offcanvas {
+    transform: translateX(0) !important;
+  }
+  
+  .offcanvas-start {
+    transform: translateX(100%) !important;
+  }
+  
+  .offcanvas-end {
+    transform: translateX(-100%) !important;
+  }
+  
+  .offcanvas.show {
+    transform: translateX(0) !important;
+  }
+.padding-Top{
+    margin-top: 12px !important;
+}
