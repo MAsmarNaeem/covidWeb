@@ -1,16 +1,29 @@
-
 import React from "react";
 
 function Footer() {
   return (
-    <footer className=" text-dark text-center py-3" style={{backgroundColor:"whitesmoke"}}>
+    <footer
+      className=" text-dark text-center py-3"
+      style={{ backgroundColor: "whitesmoke" }}
+    >
       <div className="container-fluid">
-        <hr/>
-        <br/>
+        <hr />
+        <br />
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Nulla nec purus feugiat, aliquet dolor eu, consectetur ligula.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+          dignissimos quos quod impedit, temporibus modi porro praesentium
+          excepturi similique laudantium. Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Autem dignissimos quos quod impedit,
+          temporibus modi porro praesentium excepturi similique laudantium.
+        </p>
         <p>Phasellus non orci vel enim consectetur efficitur.</p>
-        <p>Donec eu justo nec tellus euismod tempus.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          perspiciatis delectus vel accusamus itaque distinctio a fuga id enim!
+        </p>
+        <p>Lorem ipsum dolor sit amet,</p>
+        <p>Lorem ipsum dolor sit </p>
       </div>
     </footer>
   );

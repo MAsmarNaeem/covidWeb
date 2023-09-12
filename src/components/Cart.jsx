@@ -16,7 +16,7 @@ function Example() {
       <Button
         variant="primary"
         onClick={handleShow}
-        className="nav-link padding-Top text-white"
+        className="nav-link padding-Top text-white pb-3"
       >
         <BsBagCheck />
       </Button>

@@ -1,9 +1,9 @@
 import React from "react";
-import { Container, Nav, Navbar, NavDropdown,Button } from "react-bootstrap";
-import covidIcon from '../../Compressed/SC/images/covid-19-icon.png';
-
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import Cart from "../Cart";
 import { useState } from "react";
+import lifecello from "../../Compressed/SC/images/lifecelllogo@2x.png";
+import us from "../../Compressed/SC/images/us.png";
 
 function NavbarCom() {
   const [showCart, setShowCart] = useState(false);
@@ -11,33 +11,62 @@ function NavbarCom() {
   const toggleCart = () => {
     setShowCart(!showCart);
   };
+
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar
+        bg="dark"
+        variant="dark"
+        expand="lg"
+        className="w-100"
+        style={{ position: "fixed", marginTop: "60px" }}
+      >
         <Container fluid>
-       
-          <Navbar.Brand href="/"><img src={covidIcon} alt="Covid-19 Icon" height="40px" width="40px"/></Navbar.Brand>
+          <Navbar.Brand href="/">
+            <img
+              src={lifecello}
+              alt="Covid-19 Icon"
+              height="40px"
+              width="40px"
+            />
+          </Navbar.Brand>
 
-         
-          <Nav className="mx-auto">
-            <Nav.Link href="#home" className="text-white">Shop</Nav.Link>
-            <Nav.Link href="#features" className="text-white">What's New</Nav.Link>
-            <Nav.Link href="#pricing" className="text-white">Science</Nav.Link>
-            <Nav.Link href="#about" className="text-white">Blog</Nav.Link>
-            <Nav.Link href="#about" className="text-white">Company</Nav.Link>
-          </Nav>
+          <Navbar.Toggle aria-controls="navbar-nav" />
+
+          <Navbar.Collapse id="navbar-nav" className="justify-content-center">
+            <Nav className="mx-auto">
+              <Nav.Link href="#home" className="text-white px-4">
+                Shop
+              </Nav.Link>
+              <Nav.Link href="#features" className="text-white px-4">
+                What's New
+              </Nav.Link>
+              <Nav.Link href="#pricing" className="text-white px-4">
+                Science
+              </Nav.Link>
+              <Nav.Link href="#about" className="text-white px-4">
+                Blog
+              </Nav.Link>
+              <Nav.Link href="#about" className="text-white px-4">
+                Company
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
 
           <Nav>
-            <NavDropdown  title="Profile" id="basic-nav-dropdown dropdown-menu-start">
-              <NavDropdown.Item href="#profile" className="text-white" >My Profile</NavDropdown.Item>
-             
+            <NavDropdown
+              title={<img src={us} height="20px" alt="Profile Icon" />}
+              id="basic-nav-dropdown dropdown-menu-start"
+            >
+              <NavDropdown.Item
+                href="#profile"
+                className="text-white"
+              ></NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#logout">Logout</NavDropdown.Item>
             </NavDropdown>
+            <p className="text-white pt-2">United States</p>
             <Cart />
-            <div>
-     
-    </div>
           </Nav>
         </Container>
       </Navbar>
