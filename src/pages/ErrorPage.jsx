@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import {  Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import NavbarCom from "../components/layout/Navbar";
 
 
 function ErrorPage() {
@@ -14,11 +15,12 @@ function ErrorPage() {
   }, [navigate]);
 
   return (
-    <div className="text-center ">
+    <div className="text-center " >
+      <NavbarCom/>
         <div>
        
       
-      <h1 className="mt-5">
+      <h1 style={{paddingTop:"150px"}}>
         404  
       </h1>
       <h6>SORRY! PAGE YOU ARE LOOKING CAN’T BE FOUND.</h6>

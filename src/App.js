@@ -33,7 +33,7 @@ function App() {
   }, []);
   return (
     <div >
-  <Navbar/>
+
  
   <div style={{ minHeight: `${contentHeight}px` }}>
         <Routes>

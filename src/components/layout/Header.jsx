@@ -7,7 +7,7 @@ import NavbarCom from "./Navbar";
 function Header() {
   return (
     <>
-      <Navbar className="fixed-top bg-body-tertiary bgColorCss  " expand="lg">
+      <Navbar className="bg-body-tertiary bgColorCss  " expand="lg">
         <Container fluid className="justify-content-center">
           <Navbar.Brand href="#home" className="d-flex align-items-center">
             <span className="mr-2">CoronaVirus Update</span>
@@ -23,6 +23,7 @@ function Header() {
           </Navbar.Brand>
         </Container>
       </Navbar>
+      <NavbarCom/>
      
     </>
   );

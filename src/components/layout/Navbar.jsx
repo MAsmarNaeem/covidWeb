@@ -19,7 +19,7 @@ function NavbarCom() {
         variant="dark"
         expand="lg"
         className="w-100"
-        style={{ position: "fixed", marginTop: "60px" }}
+        style={{ position: "fixed" }}
       >
         <Container fluid>
           <Navbar.Brand href="/">

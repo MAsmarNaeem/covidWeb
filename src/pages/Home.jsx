@@ -16,6 +16,8 @@ import slidercontent from "../Compressed/SC/images/home-slider-content.png";
 import featuredicond1 from "../Compressed/SC/images/feature-icon-1.png";
 import featuredicond2 from "../Compressed/SC/images/feature-icon-2.png";
 import featuredicond3 from "../Compressed/SC/images/feature-icon-3.png";
+import { GrFacebook } from 'react-icons/gr';
+
 
 const Home = () => {
   const [productData, setProductsData] = useState([]);
@@ -186,8 +188,9 @@ const Home = () => {
         </div>
         <div className="col-md-2">
           <h5>Social</h5>
-          <img src={twitter} height="40px" alt="" srcset="" />
-          <img src={fb} className="px-2" height="25px" alt="" srcset="" />
+        <Link ><img src={twitter} height="40px" alt="" srcset="" /></Link> 
+          <img  src={fb} className="px-2" height="25px" alt="" srcset="" />
+          
           <img src={youtube} className="px-2" height="35px" alt="" srcset="" />
           <img src={pinInterest} className="px-2" height="30px" alt="" srcset="" />
         </div>
